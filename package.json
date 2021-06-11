@@ -1,0 +1,13 @@
+{
+  "name": "graphql-users",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "oasis10702 <oasis10702@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.0",
+    "lodash": "^4.17.21"
+  }
+}
