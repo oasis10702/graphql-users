@@ -22,8 +22,6 @@ const UserQuery = {
     id: { type: new GraphQLNonNull(GraphQLString) }
   },
   resolve(parentValue, args) {
-    console.log('args', args);
-    console.log('users', users);
     return _.find(users, { id: args.id });
   }
 };
