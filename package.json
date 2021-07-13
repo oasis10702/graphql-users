@@ -14,7 +14,7 @@
     "nodemon": "^2.0.11"
   },
   "scripts": {
-    "json:server": "json-server --watch db.json",
-    "dev": "nodemon server.js"
+    "dev": "nodemon server.js",
+    "json:server": "json-server --watch db.json"
   }
 }
