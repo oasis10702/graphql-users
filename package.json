@@ -2,7 +2,7 @@
   "name": "graphql-users",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "oasis10702 <oasis10702@gmail.com>",
+  "author": "oasis10702",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
