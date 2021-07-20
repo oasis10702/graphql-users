@@ -3,5 +3,16 @@
     { "id": "23", "firstName": "Bill", "age": 20 },
     { "id": "40", "firstName": "Alex", "age": 40 }
   ],
-  "company": []
+  "company": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "description": "iPhone"
+    },
+    {
+      "id": "2",
+      "name": "Google",
+      "description": "search"
+    }
+  ]
 }
