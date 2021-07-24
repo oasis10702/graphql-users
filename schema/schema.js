@@ -3,11 +3,6 @@ const axios = require('axios');
 const _ = require('lodash');
 const { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema, GraphQLNonNull } = graphql;
 
-const users = [
-  { id: '1', firstName: 'Bill', age: 20 },
-  { id: '2', firstName: 'Samantha', age: 21 }
-];
-
 const UserType = new GraphQLObjectType({
   name: 'User',
   fields: {
