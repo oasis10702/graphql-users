@@ -3,7 +3,7 @@ const axios = require('axios');
 const _ = require('lodash');
 const { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema, GraphQLNonNull } = graphql;
 
-const CompanyType = new GraphQLObjectType({});
+const CompanyType = new GraphQLObjectType();
 
 const UserType = new GraphQLObjectType({
   name: 'User',
