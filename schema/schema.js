@@ -11,7 +11,6 @@ const CompanyType = new GraphQLObjectType({
     description: { type: GraphQLString }
   }
 });
-
 const UserType = new GraphQLObjectType({
   name: 'User',
   fields: {
