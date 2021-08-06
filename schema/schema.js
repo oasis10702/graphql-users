@@ -43,7 +43,7 @@ const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
     user: UserQuery,
-    company: CompanyType
+    company: CompanyQuery
   }
 });
 
