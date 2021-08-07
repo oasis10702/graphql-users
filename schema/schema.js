@@ -37,7 +37,15 @@ const UserQuery = {
   }
 };
 
-const CompanyQuery = {};
+const CompanyQuery = {
+  type: CompanyType,
+  args: {
+    id: { type: new GraphQLNonNull(GraphQLString) }
+  },
+  resolve(parentValue, args) {
+    return axios.get(`http://localhost:3000/companies/${args.id}`).then(resp => resp.data);
+  }
+};
 
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
