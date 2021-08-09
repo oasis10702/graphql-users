@@ -36,6 +36,7 @@ const UserQuery = {
     return axios.get(`http://localhost:3000/users/${args.id}`).then(resp => resp.data);
   }
 };
+
 const CompanyQuery = {
   type: CompanyType,
   args: {
