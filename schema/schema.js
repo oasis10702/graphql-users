@@ -1,7 +1,7 @@
 const graphql = require('graphql');
 const axios = require('axios');
 const _ = require('lodash');
-const { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema, GraphQLNonNull } = graphql;
+const { GraphQLObjectType, GraphQLString, GraphQLInt, GraphQLSchema, GraphQLNonNull, GraphQLList } = graphql;
 
 const CompanyType = new GraphQLObjectType({
   name: 'Company',
@@ -9,7 +9,7 @@ const CompanyType = new GraphQLObjectType({
     id: { type: GraphQLString },
     name: { type: GraphQLString },
     description: { type: GraphQLString },
-    users: { type: UserType }
+    users: { type: new GraphQLList(UserType) }
   }
 });
 
