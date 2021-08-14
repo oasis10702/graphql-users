@@ -32,7 +32,6 @@ const UserType = new GraphQLObjectType({
     }
   }
 });
-
 const UserQuery = {
   type: UserType,
   args: {
