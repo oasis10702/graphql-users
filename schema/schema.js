@@ -60,6 +60,7 @@ const RootQuery = new GraphQLObjectType({
     company: CompanyQuery
   }
 });
+
 const mutation = new GraphQLObjectType({
   name: 'Mutation',
   fields: {
