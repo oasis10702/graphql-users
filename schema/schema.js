@@ -83,7 +83,9 @@ const mutation = new GraphQLObjectType({
         return axios.delete(`http://localhost:3000/users/${id}`).then(res => res.data);
       }
     },
-    editUser: {}
+    editUser: {
+      type: UserType
+    }
   }
 });
 
