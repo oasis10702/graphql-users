@@ -84,7 +84,10 @@ const mutation = new GraphQLObjectType({
       }
     },
     editUser: {
-      type: UserType
+      type: UserType,
+      args: {
+        id: { type: new GraphQLNonNull(GraphQLString) }
+      }
     }
   }
 });
